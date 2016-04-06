@@ -1,0 +1,80 @@
+c:\users\eloye_000\documents\visual studio 2013\Projects\Prueba proyecto bdat\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe.config
+c:\users\eloye_000\documents\visual studio 2013\Projects\Prueba proyecto bdat\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe
+c:\users\eloye_000\documents\visual studio 2013\Projects\Prueba proyecto bdat\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.pdb
+c:\users\eloye_000\documents\visual studio 2013\Projects\Prueba proyecto bdat\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.xml
+c:\users\eloye_000\documents\visual studio 2013\Projects\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.Resources.resources
+c:\users\eloye_000\documents\visual studio 2013\Projects\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbproj.GenerateResource.Cache
+c:\users\eloye_000\documents\visual studio 2013\Projects\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.exe
+c:\users\eloye_000\documents\visual studio 2013\Projects\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.xml
+c:\users\eloye_000\documents\visual studio 2013\Projects\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.pdb
+c:\users\eloye_000\documents\visual studio 2013\Projects\Prueba proyecto bdat\Prueba proyecto bdat\bin\Debug\RMCCustomControls (2).dll
+c:\users\eloye_000\documents\visual studio 2013\Projects\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbprojResolveAssemblyReference.cache
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.FormInicio.resources
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.FormCatUsu.resources
+C:\Users\Sandy\Desktop\Prueba proyecto bdat\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe.config
+C:\Users\Sandy\Desktop\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.exe
+C:\Users\Sandy\Desktop\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.xml
+C:\Users\Sandy\Desktop\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.pdb
+C:\Users\Sandy\Desktop\Prueba proyecto bdat\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe
+C:\Users\Sandy\Desktop\Prueba proyecto bdat\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.pdb
+C:\Users\Sandy\Desktop\Prueba proyecto bdat\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.xml
+C:\Users\Sandy\Desktop\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbprojResolveAssemblyReference.cache
+C:\Users\Sandy\Desktop\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.FormInicio.resources
+C:\Users\Sandy\Desktop\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.FormCatUsu.resources
+C:\Users\Sandy\Desktop\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.Resources.resources
+C:\Users\Sandy\Desktop\Prueba proyecto bdat\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbproj.GenerateResource.Cache
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat - copia\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe.config
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.exe
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.xml
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.pdb
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat - copia\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat - copia\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.pdb
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat - copia\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.xml
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat - copia\Prueba proyecto bdat\bin\Debug\RMCCustomControls (2).dll
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbprojResolveAssemblyReference.cache
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.FormInicio.resources
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.FormCatUsu.resources
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.Resources.resources
+C:\Users\eloye_000\Documents\Visual Studio 2013\Projects\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbproj.GenerateResource.Cache
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe.config
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.exe
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.xml
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.pdb
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.pdb
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.xml
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbprojResolveAssemblyReference.cache
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.FormCatUsu.resources
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.Resources.resources
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbproj.GenerateResource.Cache
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frmInicio.resources
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_InicioDeSesion.resources
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeUsuarios.resources
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeComercios.resources
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeEmpleado.resources
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeEmpresas.resources
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_Menu.resources
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_Depositar.resources
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_UsoDeTarjeta.resources
+C:\Users\Yamil Yáñez\Desktop\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_UsoTarjetaEmpresas.resources
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe.config
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.exe
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.xml
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.pdb
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.pdb
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.xml
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbprojResolveAssemblyReference.cache
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeComercios.resources
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeEmpleado.resources
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeEmpresas.resources
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeUsuarios.resources
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frmInicio.resources
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.FormCatUsu.resources
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_Depositar.resources
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_InicioDeSesion.resources
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_Menu.resources
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_UsoDeTarjeta.resources
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_UsoTarjetaEmpresas.resources
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.Resources.resources
+G:\DATA\Proyectos\Prueba proyecto bdat - copia\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbproj.GenerateResource.Cache
