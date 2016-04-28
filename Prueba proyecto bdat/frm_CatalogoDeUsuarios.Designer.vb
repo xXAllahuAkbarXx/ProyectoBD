@@ -27,11 +27,6 @@ Partial Class frm_CatalogoDeUsuarios
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtCorreo = New System.Windows.Forms.TextBox()
         Me.dgrid_Usuario = New System.Windows.Forms.DataGridView()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Correo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Borrar = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -42,6 +37,11 @@ Partial Class frm_CatalogoDeUsuarios
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Correo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Borrar = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.dgrid_Usuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -87,46 +87,6 @@ Partial Class frm_CatalogoDeUsuarios
         Me.dgrid_Usuario.Name = "dgrid_Usuario"
         Me.dgrid_Usuario.Size = New System.Drawing.Size(456, 252)
         Me.dgrid_Usuario.TabIndex = 7
-        '
-        'ID
-        '
-        Me.ID.DataPropertyName = "IDusuario"
-        Me.ID.HeaderText = "ID"
-        Me.ID.Name = "ID"
-        Me.ID.ReadOnly = True
-        Me.ID.Visible = False
-        '
-        'Nombre
-        '
-        Me.Nombre.DataPropertyName = "Nombre"
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.MaxInputLength = 50
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.Width = 200
-        '
-        'Correo
-        '
-        Me.Correo.DataPropertyName = "Correo"
-        Me.Correo.HeaderText = "Correo"
-        Me.Correo.Name = "Correo"
-        Me.Correo.Width = 140
-        '
-        'Telefono
-        '
-        Me.Telefono.HeaderText = "Telefono"
-        Me.Telefono.Name = "Telefono"
-        Me.Telefono.Visible = False
-        '
-        'Borrar
-        '
-        Me.Borrar.DividerWidth = 10
-        Me.Borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Borrar.HeaderText = ""
-        Me.Borrar.Name = "Borrar"
-        Me.Borrar.ReadOnly = True
-        Me.Borrar.Text = "Borrar"
-        Me.Borrar.UseColumnTextForButtonValue = True
-        Me.Borrar.Width = 80
         '
         'Label5
         '
@@ -229,6 +189,49 @@ Partial Class frm_CatalogoDeUsuarios
         Me.Label7.TabIndex = 14
         Me.Label7.Text = "Crono-Vales"
         '
+        'ID
+        '
+        Me.ID.DataPropertyName = "idUsuario"
+        Me.ID.HeaderText = "ID"
+        Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
+        Me.ID.Visible = False
+        '
+        'Nombre
+        '
+        Me.Nombre.DataPropertyName = "nombreCompleto"
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.MaxInputLength = 100
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.Width = 200
+        '
+        'Correo
+        '
+        Me.Correo.DataPropertyName = "correoElectronico"
+        Me.Correo.HeaderText = "Correo"
+        Me.Correo.MaxInputLength = 100
+        Me.Correo.Name = "Correo"
+        Me.Correo.Width = 140
+        '
+        'Telefono
+        '
+        Me.Telefono.DataPropertyName = "telefonoContacto"
+        Me.Telefono.HeaderText = "Telefono"
+        Me.Telefono.MaxInputLength = 20
+        Me.Telefono.Name = "Telefono"
+        Me.Telefono.Visible = False
+        '
+        'Borrar
+        '
+        Me.Borrar.DividerWidth = 10
+        Me.Borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Borrar.HeaderText = ""
+        Me.Borrar.Name = "Borrar"
+        Me.Borrar.ReadOnly = True
+        Me.Borrar.Text = "Borrar"
+        Me.Borrar.UseColumnTextForButtonValue = True
+        Me.Borrar.Width = 80
+        '
         'frm_CatalogoDeUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -269,15 +272,15 @@ Partial Class frm_CatalogoDeUsuarios
     Friend WithEvents txtTelefono As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents txtID As TextBox
-    Friend WithEvents ID As DataGridViewTextBoxColumn
-    Friend WithEvents Nombre As DataGridViewTextBoxColumn
-    Friend WithEvents Correo As DataGridViewTextBoxColumn
-    Friend WithEvents Telefono As DataGridViewTextBoxColumn
-    Friend WithEvents Borrar As DataGridViewButtonColumn
     Friend WithEvents Label4 As Label
     Friend WithEvents txtContraseña As TextBox
     Friend WithEvents btnAceptar As Button
     Friend WithEvents btnCancelar As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents ID As DataGridViewTextBoxColumn
+    Friend WithEvents Nombre As DataGridViewTextBoxColumn
+    Friend WithEvents Correo As DataGridViewTextBoxColumn
+    Friend WithEvents Telefono As DataGridViewTextBoxColumn
+    Friend WithEvents Borrar As DataGridViewButtonColumn
 End Class

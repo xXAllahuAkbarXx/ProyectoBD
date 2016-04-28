@@ -45,7 +45,7 @@
             If txtID.Text = "" Then
                 ConnectionModule.connection.NonQueryCommand("INSERT INTO Usuario (nombreCompleto, correoElectronico, contrasenia, telefonoContacto) VALUES ('" & txtNombre.Text & "','" & txtCorreo.Text & "','" & txtContraseña.Text & "','" & txtTelefono.Text & "')")
             Else
-                ConnectionModule.connection.NonQueryCommand("UPDATE Usuario SET nombreCompleto = '" + txtNombre.Text + "', correoElectronico = '" + txtCorreo.Text + "', telefonoContacto = '" + txtTelefono.Text + "' WHERE '" + txtID.Text + "' = IDusuario")
+                ConnectionModule.connection.NonQueryCommand("UPDATE Usuario SET nombreCompleto = '" + txtNombre.Text + "', correoElectronico = '" + txtCorreo.Text + "', telefonoContacto = '" + txtTelefono.Text + "' WHERE '" + txtID.Text + "' = idUsuario")
             End If
 
             btnAceptar.Text = "Agregar"
@@ -75,23 +75,24 @@
 
     Private Sub dgrid_Usuario_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgrid_Usuario.CellClick
         actualizando = True
+        If e.RowIndex < dgrid_Usuario.RowCount - 1 Then
+            txtID.Text = dgrid_Usuario.CurrentRow.Cells.Item(2).Value
+            txtNombre.Text = dgrid_Usuario.CurrentRow.Cells.Item(3).Value
+            txtCorreo.Text = dgrid_Usuario.CurrentRow.Cells.Item(1).Value
+            txtTelefono.Text = dgrid_Usuario.CurrentRow.Cells.Item(4).Value
 
-        txtID.Text = dgrid_Usuario.CurrentRow.Cells.Item(2).Value
-        txtNombre.Text = dgrid_Usuario.CurrentRow.Cells.Item(3).Value
-        txtCorreo.Text = dgrid_Usuario.CurrentRow.Cells.Item(4).Value
-        txtTelefono.Text = dgrid_Usuario.CurrentRow.Cells.Item(5).Value
+            btnAceptar.Text = "Actualizar"
+            btnAceptar.BackColor = Color.DodgerBlue
+        End If
 
-        btnAceptar.Text = "Actualizar"
-        btnAceptar.BackColor = Color.DodgerBlue
-
-        If e.ColumnIndex = 1 Then
+        If e.ColumnIndex = 0 Then
             If txtID.Text <> "" Then
                 Dim response As MsgBoxResult
 
                 response = MsgBox("¿Estás seguro que quieres eliminar al usuario '" & txtNombre.Text & "'?", MsgBoxStyle.YesNo, "Confirmación")
 
                 If response = MsgBoxResult.Yes Then
-                    ConnectionModule.connection.NonQueryCommand("UPDATE Usuario SET activo = 0 WHERE IDusuario = " & txtID.Text)
+                    ConnectionModule.connection.NonQueryCommand("UPDATE Usuario SET activo = 0 WHERE idUsuario = " & txtID.Text)
                     ConnectionModule.connection.Clear(dgrid_Usuario)
 
                     ResetControls()

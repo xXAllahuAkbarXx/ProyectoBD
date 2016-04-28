@@ -1,7 +1,7 @@
 ﻿Public Class frm_InicioDeSesion
     Private Sub btn_Entrar_Click(sender As Object, e As EventArgs) Handles btn_Entrar.Click
         If txt_Usuario.Text <> "" And txt_Contraseña.Text <> "" Then
-            Dim dt As DataTable = ConnectionModule.connection.ReaderCommand("SELECT correoElectronico, contrasenia FROM Usuario WHERE correoElectronico = '" & txt_Usuario.Text & "'", "Usuario").Tables.Item(0)
+            Dim dt As DataTable = ConnectionModule.connection.ReaderCommand("SELECT correoElectronico FROM Usuario WHERE correoElectronico = '" & txt_Usuario.Text & "'", "Usuario").Tables.Item(0)
             If dt.Rows.Count > 0 Then
                 Me.Hide()
                 frm_CatalogoDeUsuarios.Show()
