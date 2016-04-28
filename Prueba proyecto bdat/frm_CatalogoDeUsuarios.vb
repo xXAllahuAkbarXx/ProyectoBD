@@ -2,7 +2,7 @@
     Dim actualizando = False
     Dim puedoAgregar = False
     Private Sub LoadDataGrid()
-        Me.dgrid_Usuario.DataSource = ConnectionModule.connection.ReaderCommand("SELECT IDusuario, Nombre, Correo, Telefono FROM Usuario WHERE Activo = 1", "Usuario").Tables("Usuario")
+        Me.dgrid_Usuario.DataSource = ConnectionModule.connection.ReaderCommand("SELECT idUsuario, nombreCompleto, correoElectronico, telefonoContacto FROM Usuario WHERE activo = 1", "Usuario").Tables("Usuario")
     End Sub
 
     Private Sub ResetControls()
@@ -43,9 +43,9 @@
 
         If puedoAgregar = True Then
             If txtID.Text = "" Then
-                ConnectionModule.connection.NonQueryCommand("INSERT INTO Usuario (Nombre,Correo,Contrasena,Telefono) VALUES ('" & txtNombre.Text & "','" & txtCorreo.Text & "','" & txtContraseña.Text & "','" & txtTelefono.Text & "')")
+                ConnectionModule.connection.NonQueryCommand("INSERT INTO Usuario (nombreCompleto, correoElectronico, contrasenia, telefonoContacto) VALUES ('" & txtNombre.Text & "','" & txtCorreo.Text & "','" & txtContraseña.Text & "','" & txtTelefono.Text & "')")
             Else
-                ConnectionModule.connection.NonQueryCommand("UPDATE Usuario SET Nombre = '" + txtNombre.Text + "', Correo = '" + txtCorreo.Text + "', Telefono = '" + txtTelefono.Text + "' WHERE '" + txtID.Text + "' = IDusuario")
+                ConnectionModule.connection.NonQueryCommand("UPDATE Usuario SET nombreCompleto = '" + txtNombre.Text + "', correoElectronico = '" + txtCorreo.Text + "', telefonoContacto = '" + txtTelefono.Text + "' WHERE '" + txtID.Text + "' = IDusuario")
             End If
 
             btnAceptar.Text = "Agregar"
@@ -91,7 +91,7 @@
                 response = MsgBox("¿Estás seguro que quieres eliminar al usuario '" & txtNombre.Text & "'?", MsgBoxStyle.YesNo, "Confirmación")
 
                 If response = MsgBoxResult.Yes Then
-                    ConnectionModule.connection.NonQueryCommand("UPDATE Usuario SET Activo = 0 WHERE IDusuario = " & txtID.Text)
+                    ConnectionModule.connection.NonQueryCommand("UPDATE Usuario SET activo = 0 WHERE IDusuario = " & txtID.Text)
                     ConnectionModule.connection.Clear(dgrid_Usuario)
 
                     ResetControls()

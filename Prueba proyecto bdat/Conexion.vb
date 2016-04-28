@@ -1,8 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Connection
-    'Dim connectionString As New String("Data Source=ELOYPC\SQLEXPRESS; Initial Catalog=EjemploBD; User Id=sa; Password=homecoming96; Connection Lifetime=60; Max Pool Size=50; Min Pool Size=3")
-    'Dim conexion As New SqlConnection(connectionString)
     Dim connection As SqlConnection
     Dim command As New SqlCommand
     Dim dataSet As New DataSet
@@ -12,7 +10,7 @@ Public Class Connection
         connection = New SqlConnection(connectionString)
     End Sub
 
-    Public Function ReaderCommand(ByVal commandText As String, ByVal tables As String)
+    Public Function ReaderCommand(ByVal commandText As String, ByVal tables As String) As DataSet
 
         command.Connection = connection
         command.CommandText = commandText
