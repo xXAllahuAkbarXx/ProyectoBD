@@ -20,7 +20,12 @@
     End Sub
 
     Private Sub btn_Salir_Click(sender As Object, e As EventArgs) Handles btn_Salir.Click
-        'Close()
         Application.Exit()
+    End Sub
+
+    Private Sub txt_Contraseña_KeyDown(sender As Object, e As KeyEventArgs) Handles txt_Contraseña.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Call (Sub() btn_Entrar_Click(sender, e))()
+        End If
     End Sub
 End Class
