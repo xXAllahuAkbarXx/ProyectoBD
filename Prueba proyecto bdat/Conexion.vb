@@ -8,12 +8,13 @@ Public Class Connection
 
     Public Sub New(ByVal connectionString)
         connection = New SqlConnection(connectionString)
+        dataSet.EnforceConstraints = False
     End Sub
 
-    Public Function ReaderCommand(ByVal commandText As String, ByVal tables As String) As DataSet
-
+    Public Function ReaderCommand(ByVal commandString As String, ByVal tables As String) As DataSet
+        dataSet.Clear()
         command.Connection = connection
-        command.CommandText = commandText
+        command.CommandText = commandString
         connection.Open()
 
         dataReader = command.ExecuteReader()

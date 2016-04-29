@@ -35,18 +35,18 @@ Partial Class frm_InicioDeSesion
         'txt_Usuario
         '
         Me.txt_Usuario.Location = New System.Drawing.Point(94, 220)
-        Me.txt_Usuario.MaxLength = 20
+        Me.txt_Usuario.MaxLength = 100
         Me.txt_Usuario.Name = "txt_Usuario"
-        Me.txt_Usuario.Size = New System.Drawing.Size(123, 20)
+        Me.txt_Usuario.Size = New System.Drawing.Size(193, 20)
         Me.txt_Usuario.TabIndex = 1
         '
         'txt_Contraseña
         '
         Me.txt_Contraseña.Location = New System.Drawing.Point(94, 269)
-        Me.txt_Contraseña.MaxLength = 20
+        Me.txt_Contraseña.MaxLength = 200
         Me.txt_Contraseña.Name = "txt_Contraseña"
         Me.txt_Contraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txt_Contraseña.Size = New System.Drawing.Size(123, 20)
+        Me.txt_Contraseña.Size = New System.Drawing.Size(193, 20)
         Me.txt_Contraseña.TabIndex = 2
         '
         'btn_Entrar
@@ -56,7 +56,7 @@ Partial Class frm_InicioDeSesion
         Me.btn_Entrar.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue
         Me.btn_Entrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_Entrar.ForeColor = System.Drawing.SystemColors.Control
-        Me.btn_Entrar.Location = New System.Drawing.Point(142, 331)
+        Me.btn_Entrar.Location = New System.Drawing.Point(212, 331)
         Me.btn_Entrar.Name = "btn_Entrar"
         Me.btn_Entrar.Size = New System.Drawing.Size(75, 23)
         Me.btn_Entrar.TabIndex = 3
@@ -70,7 +70,7 @@ Partial Class frm_InicioDeSesion
         Me.btn_Salir.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
         Me.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_Salir.ForeColor = System.Drawing.SystemColors.Control
-        Me.btn_Salir.Location = New System.Drawing.Point(43, 331)
+        Me.btn_Salir.Location = New System.Drawing.Point(118, 331)
         Me.btn_Salir.Name = "btn_Salir"
         Me.btn_Salir.Size = New System.Drawing.Size(75, 23)
         Me.btn_Salir.TabIndex = 4
@@ -102,7 +102,7 @@ Partial Class frm_InicioDeSesion
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(243, 64)
+        Me.Label1.Size = New System.Drawing.Size(317, 64)
         Me.Label1.TabIndex = 5
         '
         'Label7
@@ -123,7 +123,7 @@ Partial Class frm_InicioDeSesion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(242, 381)
+        Me.ClientSize = New System.Drawing.Size(313, 381)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btn_Salir)
