@@ -23,6 +23,9 @@ Partial Class frm_Depositar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.EmpleadoNumero = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmpleadoNombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Importe = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -33,17 +36,14 @@ Partial Class frm_Depositar
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.EmpleadoNumero = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EmpleadoNombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Importe = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -58,6 +58,25 @@ Partial Class frm_Depositar
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(399, 221)
         Me.DataGridView1.TabIndex = 0
+        '
+        'EmpleadoNumero
+        '
+        Me.EmpleadoNumero.HeaderText = "Numero"
+        Me.EmpleadoNumero.Name = "EmpleadoNumero"
+        Me.EmpleadoNumero.ReadOnly = True
+        '
+        'EmpleadoNombre
+        '
+        Me.EmpleadoNombre.HeaderText = "Nombre"
+        Me.EmpleadoNombre.Name = "EmpleadoNombre"
+        Me.EmpleadoNombre.ReadOnly = True
+        Me.EmpleadoNombre.Width = 155
+        '
+        'Importe
+        '
+        Me.Importe.HeaderText = "Importe"
+        Me.Importe.Name = "Importe"
+        Me.Importe.ToolTipText = "Cantidad a depositar."
         '
         'Label7
         '
@@ -170,21 +189,12 @@ Partial Class frm_Depositar
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Empleado"
         '
-        'Label1
+        'TextBox3
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 19)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nombre"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(9, 35)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(167, 20)
-        Me.TextBox1.TabIndex = 1
+        Me.TextBox3.Location = New System.Drawing.Point(9, 76)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(167, 20)
+        Me.TextBox3.TabIndex = 26
         '
         'Label5
         '
@@ -195,12 +205,21 @@ Partial Class frm_Depositar
         Me.Label5.TabIndex = 25
         Me.Label5.Text = "Numero"
         '
-        'TextBox3
+        'TextBox1
         '
-        Me.TextBox3.Location = New System.Drawing.Point(9, 76)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(167, 20)
-        Me.TextBox3.TabIndex = 26
+        Me.TextBox1.Location = New System.Drawing.Point(9, 35)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(167, 20)
+        Me.TextBox1.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(6, 19)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Nombre"
         '
         'GroupBox2
         '
@@ -246,25 +265,6 @@ Partial Class frm_Depositar
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Individual"
         Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'EmpleadoNumero
-        '
-        Me.EmpleadoNumero.HeaderText = "Numero"
-        Me.EmpleadoNumero.Name = "EmpleadoNumero"
-        Me.EmpleadoNumero.ReadOnly = True
-        '
-        'EmpleadoNombre
-        '
-        Me.EmpleadoNombre.HeaderText = "Nombre"
-        Me.EmpleadoNombre.Name = "EmpleadoNombre"
-        Me.EmpleadoNombre.ReadOnly = True
-        Me.EmpleadoNombre.Width = 155
-        '
-        'Importe
-        '
-        Me.Importe.HeaderText = "Importe"
-        Me.Importe.Name = "Importe"
-        Me.Importe.ToolTipText = "Cantidad a depositar."
         '
         'Button4
         '

@@ -12,21 +12,6 @@
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -146,12 +131,6 @@
     <Compile Include="frm_Menu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Movimientos.Designer.vb">
-      <DependentUpon>frm_Movimientos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm_Movimientos.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frm_UsoDeTarjeta.Designer.vb">
       <DependentUpon>frm_UsoDeTarjeta.vb</DependentUpon>
     </Compile>
@@ -208,9 +187,6 @@
     <EmbeddedResource Include="frm_Menu.resx">
       <DependentUpon>frm_Menu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Movimientos.resx">
-      <DependentUpon>frm_Movimientos.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_UsoDeTarjeta.resx">
       <DependentUpon>frm_UsoDeTarjeta.vb</DependentUpon>
     </EmbeddedResource>
@@ -235,18 +211,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -25,22 +25,22 @@ Partial Class frm_Menu
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Menu))
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.btn_Usuario = New System.Windows.Forms.PictureBox()
+        Me.btn_Empleado = New System.Windows.Forms.PictureBox()
+        Me.btn_Empresa = New System.Windows.Forms.PictureBox()
+        Me.btn_Comercio = New System.Windows.Forms.PictureBox()
+        Me.btn_Deposito = New System.Windows.Forms.PictureBox()
+        Me.btn_Cargo = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btn_Usuario, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btn_Empleado, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btn_Empresa, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btn_Comercio, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btn_Deposito, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btn_Cargo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -67,71 +67,71 @@ Partial Class frm_Menu
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Crono-Vales"
         '
-        'PictureBox1
+        'btn_Usuario
         '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(42, 102)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(164, 166)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 17
-        Me.PictureBox1.TabStop = False
+        Me.btn_Usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.btn_Usuario.Image = CType(resources.GetObject("btn_Usuario.Image"), System.Drawing.Image)
+        Me.btn_Usuario.Location = New System.Drawing.Point(42, 102)
+        Me.btn_Usuario.Name = "btn_Usuario"
+        Me.btn_Usuario.Size = New System.Drawing.Size(164, 166)
+        Me.btn_Usuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btn_Usuario.TabIndex = 17
+        Me.btn_Usuario.TabStop = False
         '
-        'PictureBox2
+        'btn_Empleado
         '
-        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(42, 298)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(354, 162)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 18
-        Me.PictureBox2.TabStop = False
+        Me.btn_Empleado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.btn_Empleado.Image = CType(resources.GetObject("btn_Empleado.Image"), System.Drawing.Image)
+        Me.btn_Empleado.Location = New System.Drawing.Point(42, 298)
+        Me.btn_Empleado.Name = "btn_Empleado"
+        Me.btn_Empleado.Size = New System.Drawing.Size(354, 162)
+        Me.btn_Empleado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btn_Empleado.TabIndex = 18
+        Me.btn_Empleado.TabStop = False
         '
-        'PictureBox3
+        'btn_Empresa
         '
-        Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(230, 102)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(166, 166)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 19
-        Me.PictureBox3.TabStop = False
+        Me.btn_Empresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.btn_Empresa.Image = CType(resources.GetObject("btn_Empresa.Image"), System.Drawing.Image)
+        Me.btn_Empresa.Location = New System.Drawing.Point(230, 102)
+        Me.btn_Empresa.Name = "btn_Empresa"
+        Me.btn_Empresa.Size = New System.Drawing.Size(166, 166)
+        Me.btn_Empresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btn_Empresa.TabIndex = 19
+        Me.btn_Empresa.TabStop = False
         '
-        'PictureBox4
+        'btn_Comercio
         '
-        Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(421, 102)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(167, 166)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 20
-        Me.PictureBox4.TabStop = False
+        Me.btn_Comercio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.btn_Comercio.Image = CType(resources.GetObject("btn_Comercio.Image"), System.Drawing.Image)
+        Me.btn_Comercio.Location = New System.Drawing.Point(421, 102)
+        Me.btn_Comercio.Name = "btn_Comercio"
+        Me.btn_Comercio.Size = New System.Drawing.Size(167, 166)
+        Me.btn_Comercio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btn_Comercio.TabIndex = 20
+        Me.btn_Comercio.TabStop = False
         '
-        'PictureBox5
+        'btn_Deposito
         '
-        Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(421, 298)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(78, 78)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 21
-        Me.PictureBox5.TabStop = False
+        Me.btn_Deposito.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.btn_Deposito.Image = CType(resources.GetObject("btn_Deposito.Image"), System.Drawing.Image)
+        Me.btn_Deposito.Location = New System.Drawing.Point(421, 298)
+        Me.btn_Deposito.Name = "btn_Deposito"
+        Me.btn_Deposito.Size = New System.Drawing.Size(78, 78)
+        Me.btn_Deposito.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btn_Deposito.TabIndex = 21
+        Me.btn_Deposito.TabStop = False
         '
-        'PictureBox6
+        'btn_Cargo
         '
-        Me.PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(510, 298)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(78, 78)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 22
-        Me.PictureBox6.TabStop = False
+        Me.btn_Cargo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.btn_Cargo.Image = CType(resources.GetObject("btn_Cargo.Image"), System.Drawing.Image)
+        Me.btn_Cargo.Location = New System.Drawing.Point(510, 298)
+        Me.btn_Cargo.Name = "btn_Cargo"
+        Me.btn_Cargo.Size = New System.Drawing.Size(78, 78)
+        Me.btn_Cargo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btn_Cargo.TabIndex = 22
+        Me.btn_Cargo.TabStop = False
         '
         'PictureBox7
         '
@@ -188,22 +188,22 @@ Partial Class frm_Menu
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.PictureBox7)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.btn_Cargo)
+        Me.Controls.Add(Me.btn_Deposito)
+        Me.Controls.Add(Me.btn_Comercio)
+        Me.Controls.Add(Me.btn_Empresa)
+        Me.Controls.Add(Me.btn_Empleado)
+        Me.Controls.Add(Me.btn_Usuario)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label3)
         Me.Name = "frm_Menu"
         Me.Text = "Menu"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btn_Usuario, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btn_Empleado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btn_Empresa, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btn_Comercio, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btn_Deposito, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btn_Cargo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -213,12 +213,12 @@ Partial Class frm_Menu
 
     Friend WithEvents Label3 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents btn_Usuario As PictureBox
+    Friend WithEvents btn_Empleado As PictureBox
+    Friend WithEvents btn_Empresa As PictureBox
+    Friend WithEvents btn_Comercio As PictureBox
+    Friend WithEvents btn_Deposito As PictureBox
+    Friend WithEvents btn_Cargo As PictureBox
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents Label1 As Label
