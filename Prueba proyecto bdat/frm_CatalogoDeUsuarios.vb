@@ -3,6 +3,9 @@
     Dim puedoAgregar = False
     Private Sub LoadDataGrid()
         Me.dgrid_Usuario.DataSource = ConnectionModule.connection.ReaderCommand("SELECT idUsuario, nombreCompleto, correoElectronico, telefonoContacto FROM Usuario WHERE activo = 1", "Usuario").Tables("Usuario")
+        Me.dgrid_Usuario.Columns("Nombre").DisplayIndex = 0
+        Me.dgrid_Usuario.Columns("Correo").DisplayIndex = 1
+        Me.dgrid_Usuario.Columns("Borrar").DisplayIndex = 2
     End Sub
 
     Private Sub ResetControls()
@@ -55,6 +58,7 @@
             ConnectionModule.connection.Clear(dgrid_Usuario)
             ResetControls()
             LoadDataGrid()
+            txtNombre.Focus()
         End If
     End Sub
 
@@ -70,7 +74,9 @@
     End Sub
 
     Private Sub frm_CatalogoDeUsuarios_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        Application.Exit()
+        Me.Hide()
+        frm_Menu.Show()
+        frm_Menu.Focus()
     End Sub
 
     Private Sub dgrid_Usuario_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgrid_Usuario.CellClick

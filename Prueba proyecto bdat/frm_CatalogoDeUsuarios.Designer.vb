@@ -57,7 +57,7 @@ Partial Class frm_CatalogoDeUsuarios
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(15, 99)
-        Me.txtNombre.MaxLength = 50
+        Me.txtNombre.MaxLength = 100
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(259, 20)
         Me.txtNombre.TabIndex = 1
@@ -74,7 +74,7 @@ Partial Class frm_CatalogoDeUsuarios
         'txtCorreo
         '
         Me.txtCorreo.Location = New System.Drawing.Point(15, 161)
-        Me.txtCorreo.MaxLength = 30
+        Me.txtCorreo.MaxLength = 100
         Me.txtCorreo.Name = "txtCorreo"
         Me.txtCorreo.Size = New System.Drawing.Size(259, 20)
         Me.txtCorreo.TabIndex = 3
@@ -136,7 +136,7 @@ Partial Class frm_CatalogoDeUsuarios
         'txtContraseña
         '
         Me.txtContraseña.Location = New System.Drawing.Point(300, 99)
-        Me.txtContraseña.MaxLength = 20
+        Me.txtContraseña.MaxLength = 200
         Me.txtContraseña.Name = "txtContraseña"
         Me.txtContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtContraseña.Size = New System.Drawing.Size(168, 20)
@@ -225,7 +225,7 @@ Partial Class frm_CatalogoDeUsuarios
         '
         Me.Borrar.DividerWidth = 10
         Me.Borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Borrar.HeaderText = ""
+        Me.Borrar.HeaderText = "Borrar"
         Me.Borrar.Name = "Borrar"
         Me.Borrar.ReadOnly = True
         Me.Borrar.Text = "Borrar"
