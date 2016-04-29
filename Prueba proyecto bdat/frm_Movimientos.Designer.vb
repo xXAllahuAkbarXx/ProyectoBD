@@ -22,7 +22,7 @@ Partial Class frm_Movimientos
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("jeje")
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("jejej")
         Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("gaga")
         Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("tytyty")
         Me.header = New System.Windows.Forms.Label()
@@ -32,14 +32,14 @@ Partial Class frm_Movimientos
         Me.EmpleadoTextbox = New System.Windows.Forms.TextBox()
         Me.EmpleadoLabel = New System.Windows.Forms.Label()
         Me.GroupPredefinido = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.GroupPersonalizado = New System.Windows.Forms.GroupBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.fechaInicioLabel = New System.Windows.Forms.Label()
-        Me.fechaFinLabel = New System.Windows.Forms.Label()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.fechaFinLabel = New System.Windows.Forms.Label()
+        Me.fechaInicioLabel = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -116,17 +116,15 @@ Partial Class frm_Movimientos
         Me.GroupPredefinido.TabStop = False
         Me.GroupPredefinido.Text = "Rango predefinido"
         '
-        'RadioButton1
+        'RadioButton3
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Checked = True
-        Me.RadioButton1.Location = New System.Drawing.Point(7, 20)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(85, 17)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Hace un día"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Location = New System.Drawing.Point(7, 66)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(88, 17)
+        Me.RadioButton3.TabIndex = 2
+        Me.RadioButton3.Text = "Hace un mes"
+        Me.RadioButton3.UseVisualStyleBackColor = True
         '
         'RadioButton2
         '
@@ -138,15 +136,17 @@ Partial Class frm_Movimientos
         Me.RadioButton2.Text = "Hace 7 días"
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'RadioButton1
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(7, 66)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(88, 17)
-        Me.RadioButton3.TabIndex = 2
-        Me.RadioButton3.Text = "Hace un mes"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Checked = True
+        Me.RadioButton1.Location = New System.Drawing.Point(7, 20)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(85, 17)
+        Me.RadioButton1.TabIndex = 0
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Hace un día"
+        Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'GroupPersonalizado
         '
@@ -161,21 +161,12 @@ Partial Class frm_Movimientos
         Me.GroupPersonalizado.TabStop = False
         Me.GroupPersonalizado.Text = "Rango personalizado"
         '
-        'DateTimePicker1
+        'DateTimePicker2
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(6, 40)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(213, 20)
-        Me.DateTimePicker1.TabIndex = 0
-        '
-        'fechaInicioLabel
-        '
-        Me.fechaInicioLabel.AutoSize = True
-        Me.fechaInicioLabel.Location = New System.Drawing.Point(7, 21)
-        Me.fechaInicioLabel.Name = "fechaInicioLabel"
-        Me.fechaInicioLabel.Size = New System.Drawing.Size(64, 13)
-        Me.fechaInicioLabel.TabIndex = 1
-        Me.fechaInicioLabel.Text = "Fecha inicio"
+        Me.DateTimePicker2.Location = New System.Drawing.Point(7, 79)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(213, 20)
+        Me.DateTimePicker2.TabIndex = 3
         '
         'fechaFinLabel
         '
@@ -186,12 +177,21 @@ Partial Class frm_Movimientos
         Me.fechaFinLabel.TabIndex = 2
         Me.fechaFinLabel.Text = "Fecha fin"
         '
-        'DateTimePicker2
+        'fechaInicioLabel
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(7, 79)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(213, 20)
-        Me.DateTimePicker2.TabIndex = 3
+        Me.fechaInicioLabel.AutoSize = True
+        Me.fechaInicioLabel.Location = New System.Drawing.Point(7, 21)
+        Me.fechaInicioLabel.Name = "fechaInicioLabel"
+        Me.fechaInicioLabel.Size = New System.Drawing.Size(64, 13)
+        Me.fechaInicioLabel.TabIndex = 1
+        Me.fechaInicioLabel.Text = "Fecha inicio"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(6, 40)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(213, 20)
+        Me.DateTimePicker1.TabIndex = 0
         '
         'ListView1
         '
