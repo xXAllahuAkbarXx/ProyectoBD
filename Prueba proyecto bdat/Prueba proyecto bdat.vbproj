@@ -131,6 +131,12 @@
     <Compile Include="frm_Menu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_Movimientos.Designer.vb">
+      <DependentUpon>frm_Movimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Movimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_UsoDeTarjeta.Designer.vb">
       <DependentUpon>frm_UsoDeTarjeta.vb</DependentUpon>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Menu.resx">
       <DependentUpon>frm_Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Movimientos.resx">
+      <DependentUpon>frm_Movimientos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_UsoDeTarjeta.resx">
       <DependentUpon>frm_UsoDeTarjeta.vb</DependentUpon>
