@@ -37,13 +37,20 @@ Partial Class frm_CatalogoDeEmpleado
         Me.txtNumeroTarjeta = New System.Windows.Forms.TextBox()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.btnCancelar = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgrid_Empleado = New System.Windows.Forms.DataGridView()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.idEmpleado = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombreEmpleado = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.apellidoPaterno = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.apellidoMaterno = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RFC = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tarjetaVales = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.borrar = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgrid_Empleado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -187,13 +194,14 @@ Partial Class frm_CatalogoDeEmpleado
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = False
         '
-        'DataGridView1
+        'dgrid_Empleado
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(11, 283)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(389, 261)
-        Me.DataGridView1.TabIndex = 6
+        Me.dgrid_Empleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgrid_Empleado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idEmpleado, Me.nombreEmpleado, Me.apellidoPaterno, Me.apellidoMaterno, Me.RFC, Me.tarjetaVales, Me.borrar})
+        Me.dgrid_Empleado.Location = New System.Drawing.Point(11, 283)
+        Me.dgrid_Empleado.Name = "dgrid_Empleado"
+        Me.dgrid_Empleado.Size = New System.Drawing.Size(736, 261)
+        Me.dgrid_Empleado.TabIndex = 6
         '
         'Label7
         '
@@ -237,16 +245,61 @@ Partial Class frm_CatalogoDeEmpleado
         Me.Label9.TabIndex = 19
         Me.Label9.Text = "Empresa"
         '
+        'idEmpleado
+        '
+        Me.idEmpleado.DataPropertyName = "idEmpleado"
+        Me.idEmpleado.HeaderText = "ID"
+        Me.idEmpleado.Name = "idEmpleado"
+        Me.idEmpleado.Visible = False
+        '
+        'nombreEmpleado
+        '
+        Me.nombreEmpleado.DataPropertyName = "nombreEmpleado"
+        Me.nombreEmpleado.HeaderText = "Nombre"
+        Me.nombreEmpleado.Name = "nombreEmpleado"
+        '
+        'apellidoPaterno
+        '
+        Me.apellidoPaterno.DataPropertyName = "apellidoPaterno"
+        Me.apellidoPaterno.HeaderText = "Apellido P."
+        Me.apellidoPaterno.Name = "apellidoPaterno"
+        '
+        'apellidoMaterno
+        '
+        Me.apellidoMaterno.DataPropertyName = "apellidoMaterno"
+        Me.apellidoMaterno.HeaderText = "Apellido M."
+        Me.apellidoMaterno.Name = "apellidoMaterno"
+        '
+        'RFC
+        '
+        Me.RFC.DataPropertyName = "RFC"
+        Me.RFC.HeaderText = "RFC"
+        Me.RFC.Name = "RFC"
+        '
+        'tarjetaVales
+        '
+        Me.tarjetaVales.DataPropertyName = "tarjetaVales"
+        Me.tarjetaVales.HeaderText = "Tarjeta"
+        Me.tarjetaVales.Name = "tarjetaVales"
+        '
+        'borrar
+        '
+        Me.borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.borrar.HeaderText = "Borrar"
+        Me.borrar.Name = "borrar"
+        Me.borrar.ReadOnly = True
+        Me.borrar.Text = "Borrar"
+        '
         'frm_CatalogoDeEmpleado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(416, 556)
+        Me.ClientSize = New System.Drawing.Size(759, 556)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgrid_Empleado)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.txtNumeroTarjeta)
@@ -260,7 +313,7 @@ Partial Class frm_CatalogoDeEmpleado
         Me.Text = "Empleados"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgrid_Empleado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -281,9 +334,16 @@ Partial Class frm_CatalogoDeEmpleado
     Friend WithEvents txtNumeroTarjeta As TextBox
     Friend WithEvents btnAceptar As Button
     Friend WithEvents btnCancelar As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgrid_Empleado As DataGridView
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label9 As Label
+    Friend WithEvents idEmpleado As DataGridViewTextBoxColumn
+    Friend WithEvents nombreEmpleado As DataGridViewTextBoxColumn
+    Friend WithEvents apellidoPaterno As DataGridViewTextBoxColumn
+    Friend WithEvents apellidoMaterno As DataGridViewTextBoxColumn
+    Friend WithEvents RFC As DataGridViewTextBoxColumn
+    Friend WithEvents tarjetaVales As DataGridViewTextBoxColumn
+    Friend WithEvents borrar As DataGridViewButtonColumn
 End Class
