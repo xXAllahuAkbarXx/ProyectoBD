@@ -12,7 +12,7 @@ Public Class frm_CatalogoDeEmpleado
 
     Private Sub LoadDataGrid()
         Me.dgrid_Empleado.DataSource = ConnectionModule.connection.ReaderCommand("SELECT idEmpleado, nombreEmpleado, apellidoPaterno, apellidoMaterno, RFC, tarjetaVales FROM Empleado" &
-                                                                        "WHERE idEmpresa = " & idEmpresa & " AND activo = 1", "Empleado").Tables("Empleado")
+                                                                        " WHERE idEmpresa = " & idEmpresa & " AND activo = 1", "Empleado").Tables("Empleado")
         Me.dgrid_Empleado.Columns("nombreEmpleado").DisplayIndex = 0
         Me.dgrid_Empleado.Columns("apellidoPaterno").DisplayIndex = 1
         Me.dgrid_Empleado.Columns("apellidoMaterno").DisplayIndex = 2
@@ -86,7 +86,7 @@ Public Class frm_CatalogoDeEmpleado
                 Dim numeroTarjeta As Int64 = Int64.Parse(ultimaTarjeta.Tables("Empleado").Rows(0).Item("ultimaTarjeta").ToString()) + 1
 
                 ConnectionModule.connection.NonQueryCommand("INSERT INTO Empleado (idEmpresa, nombreEmpleado, apellidoPaterno, apellidoMaterno, RFC, tarjetaVales)" &
-                                                            "VALUES (" & idEmpresa & ",'" & txtNombre.Text & "','" & txtApellidoP.Text & "','" & txtApellidoM.Text & "','" & txtRFC.Text & "', " & numeroTarjeta & ")")
+                                                            " VALUES (" & idEmpresa & ",'" & txtNombre.Text & "','" & txtApellidoP.Text & "','" & txtApellidoM.Text & "','" & txtRFC.Text & "', " & numeroTarjeta & ")")
             Else
                 ConnectionModule.connection.NonQueryCommand("UPDATE Empleado SET nombreEmpleado = '" + txtNombre.Text + "', apellidoPaterno = '" +
                                                             txtApellidoP.Text + "', apellidoMaterno = '" + txtApellidoM.Text + "', RFC = '" + txtRFC.Text +
