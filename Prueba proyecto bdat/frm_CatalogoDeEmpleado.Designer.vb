@@ -70,7 +70,7 @@ Partial Class frm_CatalogoDeEmpleado
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(35, 120)
+        Me.GroupBox1.Location = New System.Drawing.Point(34, 76)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(389, 87)
         Me.GroupBox1.TabIndex = 2
@@ -131,7 +131,7 @@ Partial Class frm_CatalogoDeEmpleado
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(45, 75)
+        Me.Label5.Location = New System.Drawing.Point(44, 170)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(28, 13)
         Me.Label5.TabIndex = 9
@@ -139,11 +139,11 @@ Partial Class frm_CatalogoDeEmpleado
         '
         'txtRFC
         '
-        Me.txtRFC.Location = New System.Drawing.Point(48, 91)
+        Me.txtRFC.Location = New System.Drawing.Point(47, 186)
         Me.txtRFC.MaxLength = 50
         Me.txtRFC.Name = "txtRFC"
         Me.txtRFC.Size = New System.Drawing.Size(242, 20)
-        Me.txtRFC.TabIndex = 1
+        Me.txtRFC.TabIndex = 4
         '
         'Label6
         '
@@ -163,7 +163,7 @@ Partial Class frm_CatalogoDeEmpleado
         Me.btnAceptar.Location = New System.Drawing.Point(573, 184)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(75, 23)
-        Me.btnAceptar.TabIndex = 4
+        Me.btnAceptar.TabIndex = 5
         Me.btnAceptar.Text = "Agregar"
         Me.btnAceptar.UseVisualStyleBackColor = False
         '
@@ -175,7 +175,7 @@ Partial Class frm_CatalogoDeEmpleado
         Me.btnCancelar.Location = New System.Drawing.Point(483, 184)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCancelar.TabIndex = 5
+        Me.btnCancelar.TabIndex = 6
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = False
         '
@@ -187,6 +187,7 @@ Partial Class frm_CatalogoDeEmpleado
         Me.dgrid_Empleado.Name = "dgrid_Empleado"
         Me.dgrid_Empleado.Size = New System.Drawing.Size(664, 261)
         Me.dgrid_Empleado.TabIndex = 6
+        Me.dgrid_Empleado.TabStop = False
         '
         'idEmpleado
         '

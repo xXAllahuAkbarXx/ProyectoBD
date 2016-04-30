@@ -26,6 +26,7 @@ Public Class frm_CatalogoDeEmpleado
         txtApellidoP.Text = ""
         txtApellidoM.Text = ""
         lblNumeroTarjeta.Text = ""
+        txtNombre.Focus()
     End Sub
 
     Private Sub txtRFC_TextChanged(sender As Object, e As EventArgs) Handles txtRFC.TextChanged
@@ -57,9 +58,10 @@ Public Class frm_CatalogoDeEmpleado
             If lblNumeroEmpleado.Text = "" Then
                 ' TODO(Luis): Falta obtener el id de la empresa
 
-                Dim ultimaTarjeta As DataSet
-                ultimaTarjeta = ConnectionModule.connection.ReaderCommand("SELECT MAX(tarjetaVales) As ultimaTarjeta FROM Empleado", "Empleado")
-                Dim numeroTarjeta As Double = Double.Parse(ultimaTarjeta.Tables("Empleado").Rows(0).Item("ultimaTarjeta").ToString()) + 1
+                Dim ultimaTarjeta As DataSet = ConnectionModule.connection.ReaderCommand("SELECT MAX(tarjetaVales) As ultimaTarjeta FROM Empleado", "Empleado")
+                Dim numeroTarjeta As Int64 = Int64.Parse(ultimaTarjeta.Tables("Empleado").Rows(0).Item("ultimaTarjeta").ToString()) + 1
+
+
                 ConnectionModule.connection.NonQueryCommand("INSERT INTO Empleado (idEmpresa, nombreEmpleado, apellidoPaterno, apellidoMaterno, RFC, tarjetaVales) 
                                                             VALUES (1,'" & txtNombre.Text & "','" & txtApellidoP.Text & "','" & txtApellidoM.Text & "','" & txtRFC.Text & "', " & numeroTarjeta & ")")
             Else
@@ -75,7 +77,7 @@ Public Class frm_CatalogoDeEmpleado
             ConnectionModule.connection.Clear(dgrid_Empleado)
             ResetControls()
             LoadDataGrid()
-            txtNombre.Focus()
+
         End If
 
     End Sub
