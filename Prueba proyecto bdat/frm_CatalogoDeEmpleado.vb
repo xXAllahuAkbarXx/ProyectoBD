@@ -75,6 +75,7 @@
 
     End Sub
 
+
     Private Sub dgrid_Empleado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgrid_Empleado.CellClick
         actualizando = True
         If e.RowIndex < dgrid_Empleado.RowCount - 1 Then
@@ -110,5 +111,12 @@
             End If
         End If
 
+    End Sub
+
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+        ResetControls()
+        btnAceptar.Text = "Agregar"
+        actualizando = False
+        btnAceptar.BackColor = Color.FromArgb(0, 192, 0)
     End Sub
 End Class

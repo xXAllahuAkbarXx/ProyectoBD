@@ -89,6 +89,7 @@ Partial Class frm_CatalogoDeEmpleado
         'txtApellidoM
         '
         Me.txtApellidoM.Location = New System.Drawing.Point(277, 41)
+        Me.txtApellidoM.MaxLength = 50
         Me.txtApellidoM.Name = "txtApellidoM"
         Me.txtApellidoM.Size = New System.Drawing.Size(100, 20)
         Me.txtApellidoM.TabIndex = 3
@@ -105,6 +106,7 @@ Partial Class frm_CatalogoDeEmpleado
         'txtApellidoP
         '
         Me.txtApellidoP.Location = New System.Drawing.Point(155, 41)
+        Me.txtApellidoP.MaxLength = 50
         Me.txtApellidoP.Name = "txtApellidoP"
         Me.txtApellidoP.Size = New System.Drawing.Size(100, 20)
         Me.txtApellidoP.TabIndex = 2
@@ -121,6 +123,7 @@ Partial Class frm_CatalogoDeEmpleado
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(13, 41)
+        Me.txtNombre.MaxLength = 50
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(115, 20)
         Me.txtNombre.TabIndex = 1
@@ -146,6 +149,7 @@ Partial Class frm_CatalogoDeEmpleado
         'txtRFC
         '
         Me.txtRFC.Location = New System.Drawing.Point(166, 92)
+        Me.txtRFC.MaxLength = 50
         Me.txtRFC.Name = "txtRFC"
         Me.txtRFC.Size = New System.Drawing.Size(222, 20)
         Me.txtRFC.TabIndex = 1
