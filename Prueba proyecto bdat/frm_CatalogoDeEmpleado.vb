@@ -10,12 +10,12 @@
 
     Private Sub LoadDataGrid()
         Me.dgrid_Empleado.DataSource = ConnectionModule.connection.ReaderCommand("SELECT idEmpleado, nombreEmpleado, apellidoPaterno, apellidoMaterno, RFC, tarjetaVales FROM Empleado WHERE activo = 1", "Empleado").Tables("Empleado")
-        'Me.dgrid_Empleado.Columns("Nombre").DisplayIndex = 0
-        'Me.dgrid_Empleado.Columns("Apellido P.").DisplayIndex = 1
-        'Me.dgrid_Empleado.Columns("Apellido M.").DisplayIndex = 2
-        'Me.dgrid_Empleado.Columns("RFC").DisplayIndex = 3
-        'Me.dgrid_Empleado.Columns("Tarjeta").DisplayIndex = 4
-        'Me.dgrid_Empleado.Columns("Borrar").DisplayIndex = 5
+        Me.dgrid_Empleado.Columns("nombreEmpleado").DisplayIndex = 0
+        Me.dgrid_Empleado.Columns("apellidoPaterno").DisplayIndex = 1
+        Me.dgrid_Empleado.Columns("apellidoMaterno").DisplayIndex = 2
+        Me.dgrid_Empleado.Columns("RFC").DisplayIndex = 3
+        Me.dgrid_Empleado.Columns("tarjetaVales").DisplayIndex = 4
+        Me.dgrid_Empleado.Columns("Borrar").DisplayIndex = 5
     End Sub
 
     Private Sub ResetControls()
