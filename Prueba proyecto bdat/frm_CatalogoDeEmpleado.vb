@@ -50,7 +50,7 @@ Public Class frm_CatalogoDeEmpleado
                 MessageBox.Show("No se permiten números en el nombre.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Else
-                MessageBox.Show("Todos los campos son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Todos los campos son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
 
         If puedoAgregar = True Then
