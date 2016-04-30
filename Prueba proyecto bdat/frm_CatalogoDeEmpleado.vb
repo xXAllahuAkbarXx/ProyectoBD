@@ -20,12 +20,12 @@ Public Class frm_CatalogoDeEmpleado
     End Sub
 
     Private Sub ResetControls()
-        txtNumeroEmpleado.Text = ""
+        lblNumeroEmpleado.Text = ""
         txtRFC.Text = ""
         txtNombre.Text = ""
         txtApellidoP.Text = ""
         txtApellidoM.Text = ""
-        txtNumeroTarjeta.Text = ""
+        lblNumeroTarjeta.Text = ""
     End Sub
 
     Private Sub txtRFC_TextChanged(sender As Object, e As EventArgs) Handles txtRFC.TextChanged
@@ -50,11 +50,11 @@ Public Class frm_CatalogoDeEmpleado
                 MessageBox.Show("No se permiten números en el nombre.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Else
-                MessageBox.Show("Todos los campos son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Todos los campos son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
 
         If puedoAgregar = True Then
-            If txtNumeroEmpleado.Text = "" Then
+            If lblNumeroEmpleado.Text = "" Then
                 ' TODO(Luis): Falta obtener el id de la empresa
 
                 Dim ultimaTarjeta As DataSet
@@ -65,7 +65,7 @@ Public Class frm_CatalogoDeEmpleado
             Else
                 ConnectionModule.connection.NonQueryCommand("UPDATE Empleado SET nombreEmpleado = '" + txtNombre.Text + "', apellidoPaterno = '" +
                                                             txtApellidoP.Text + "', apellidoMaterno = '" + txtApellidoM.Text + "', RFC = '" + txtRFC.Text +
-                                                            "' WHERE '" + txtNumeroEmpleado.Text + "' = idEmpleado")
+                                                            "' WHERE '" + lblNumeroEmpleado.Text + "' = idEmpleado")
             End If
 
             btnAceptar.Text = "Agregar"
@@ -85,12 +85,12 @@ Public Class frm_CatalogoDeEmpleado
         actualizando = True
         If e.RowIndex < dgrid_Empleado.RowCount - 1 Then
 
-            txtNumeroEmpleado.Text = dgrid_Empleado.CurrentRow.Cells.Item(1).Value
+            lblNumeroEmpleado.Text = dgrid_Empleado.CurrentRow.Cells.Item(1).Value
             txtNombre.Text = dgrid_Empleado.CurrentRow.Cells.Item(2).Value
             txtApellidoP.Text = dgrid_Empleado.CurrentRow.Cells.Item(3).Value
             txtApellidoM.Text = dgrid_Empleado.CurrentRow.Cells.Item(4).Value
             txtRFC.Text = dgrid_Empleado.CurrentRow.Cells.Item(5).Value
-            txtNumeroTarjeta.Text = dgrid_Empleado.CurrentRow.Cells.Item(6).Value
+            lblNumeroTarjeta.Text = dgrid_Empleado.CurrentRow.Cells.Item(6).Value
 
 
             btnAceptar.Text = "Actualizar"
@@ -98,13 +98,13 @@ Public Class frm_CatalogoDeEmpleado
         End If
 
         If e.ColumnIndex = 0 Then
-            If txtNumeroEmpleado.Text <> "" Then
+            If lblNumeroEmpleado.Text <> "" Then
                 Dim response As MsgBoxResult
 
                 response = MsgBox("¿Estás seguro que quieres eliminar al empleado '" & txtNombre.Text & "'?", MsgBoxStyle.YesNo, "Confirmación")
 
                 If response = MsgBoxResult.Yes Then
-                    ConnectionModule.connection.NonQueryCommand("UPDATE Empleado SET activo = 0 WHERE idEmpleado = " & txtNumeroEmpleado.Text)
+                    ConnectionModule.connection.NonQueryCommand("UPDATE Empleado SET activo = 0 WHERE idEmpleado = " & lblNumeroEmpleado.Text)
                     ConnectionModule.connection.Clear(dgrid_Empleado)
 
                     ResetControls()
