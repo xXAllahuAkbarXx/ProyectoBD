@@ -30,10 +30,11 @@ Partial Class frm_CatalogoDeEmpresas
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtID = New System.Windows.Forms.TextBox()
-        Me.dgrid_Empresa = New System.Windows.Forms.DataGridView()
         Me.dtpInicioDeOperaciones = New System.Windows.Forms.DateTimePicker()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.gboxDomicilio = New System.Windows.Forms.GroupBox()
+        Me.txtTelefono = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.txtCp = New System.Windows.Forms.TextBox()
         Me.CodigoP = New System.Windows.Forms.Label()
         Me.cbEstado = New System.Windows.Forms.ComboBox()
@@ -51,14 +52,13 @@ Partial Class frm_CatalogoDeEmpresas
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txtTelefono = New System.Windows.Forms.TextBox()
-        Me.idComercio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RCF = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RazonSocial = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.dgrid_Empresa, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dgrid_Empresa = New System.Windows.Forms.DataGridView()
+        Me.idEmpresa = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RFC = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.razonSocial = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombreComercial = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.gboxDomicilio.SuspendLayout()
+        CType(Me.dgrid_Empresa, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblRFC
@@ -128,15 +128,6 @@ Partial Class frm_CatalogoDeEmpresas
         Me.txtID.TabIndex = 7
         Me.txtID.Visible = False
         '
-        'dgrid_Empresa
-        '
-        Me.dgrid_Empresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgrid_Empresa.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idComercio, Me.RCF, Me.RazonSocial, Me.Nombre})
-        Me.dgrid_Empresa.Location = New System.Drawing.Point(13, 357)
-        Me.dgrid_Empresa.Name = "dgrid_Empresa"
-        Me.dgrid_Empresa.Size = New System.Drawing.Size(648, 221)
-        Me.dgrid_Empresa.TabIndex = 8
-        '
         'dtpInicioDeOperaciones
         '
         Me.dtpInicioDeOperaciones.CustomFormat = "yyyy-MM-dd"
@@ -179,13 +170,31 @@ Partial Class frm_CatalogoDeEmpresas
         Me.gboxDomicilio.TabStop = False
         Me.gboxDomicilio.Text = "Domicilio"
         '
+        'txtTelefono
+        '
+        Me.txtTelefono.Location = New System.Drawing.Point(311, 102)
+        Me.txtTelefono.MaxLength = 20
+        Me.txtTelefono.Name = "txtTelefono"
+        Me.txtTelefono.Size = New System.Drawing.Size(136, 20)
+        Me.txtTelefono.TabIndex = 7
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(256, 105)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(49, 13)
+        Me.Label11.TabIndex = 13
+        Me.Label11.Text = "Telefono"
+        '
         'txtCp
         '
         Me.txtCp.Location = New System.Drawing.Point(56, 102)
-        Me.txtCp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCp.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCp.Name = "txtCp"
         Me.txtCp.Size = New System.Drawing.Size(76, 20)
-        Me.txtCp.TabIndex = 12
+        Me.txtCp.TabIndex = 6
         '
         'CodigoP
         '
@@ -326,57 +335,46 @@ Partial Class frm_CatalogoDeEmpresas
         Me.Label10.Size = New System.Drawing.Size(750, 64)
         Me.Label10.TabIndex = 17
         '
-        'Label11
+        'dgrid_Empresa
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(256, 105)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(49, 13)
-        Me.Label11.TabIndex = 13
-        Me.Label11.Text = "Telefono"
+        Me.dgrid_Empresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgrid_Empresa.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idEmpresa, Me.RFC, Me.razonSocial, Me.nombreComercial})
+        Me.dgrid_Empresa.Location = New System.Drawing.Point(12, 371)
+        Me.dgrid_Empresa.Name = "dgrid_Empresa"
+        Me.dgrid_Empresa.Size = New System.Drawing.Size(649, 205)
+        Me.dgrid_Empresa.TabIndex = 8
         '
-        'txtTelefono
+        'idEmpresa
         '
-        Me.txtTelefono.Location = New System.Drawing.Point(311, 102)
-        Me.txtTelefono.MaxLength = 20
-        Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(136, 20)
-        Me.txtTelefono.TabIndex = 14
+        Me.idEmpresa.DataPropertyName = "idEmpresa"
+        Me.idEmpresa.HeaderText = "ID"
+        Me.idEmpresa.Name = "idEmpresa"
+        Me.idEmpresa.ReadOnly = True
         '
-        'idComercio
+        'RFC
         '
-        Me.idComercio.DataPropertyName = "idEmpresa"
-        Me.idComercio.HeaderText = "ID"
-        Me.idComercio.Name = "idComercio"
-        Me.idComercio.ReadOnly = True
+        Me.RFC.DataPropertyName = "RFC"
+        Me.RFC.HeaderText = "RFC"
+        Me.RFC.Name = "RFC"
         '
-        'RCF
+        'razonSocial
         '
-        Me.RCF.DataPropertyName = "RFC"
-        Me.RCF.HeaderText = "RFC"
-        Me.RCF.Name = "RCF"
-        Me.RCF.Width = 120
+        Me.razonSocial.DataPropertyName = "razonSocial"
+        Me.razonSocial.HeaderText = "Razon Social"
+        Me.razonSocial.Name = "razonSocial"
         '
-        'RazonSocial
+        'nombreComercial
         '
-        Me.RazonSocial.DataPropertyName = "razonSocial"
-        Me.RazonSocial.HeaderText = "Razon Social"
-        Me.RazonSocial.Name = "RazonSocial"
-        Me.RazonSocial.Width = 135
-        '
-        'Nombre
-        '
-        Me.Nombre.DataPropertyName = "nombreComercial"
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.Width = 120
+        Me.nombreComercial.DataPropertyName = "nombreComercial"
+        Me.nombreComercial.HeaderText = "Nombre Comercial"
+        Me.nombreComercial.Name = "nombreComercial"
         '
         'frm_CatalogoDeEmpresas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(677, 588)
+        Me.Controls.Add(Me.dgrid_Empresa)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.btnCancelar)
@@ -384,7 +382,6 @@ Partial Class frm_CatalogoDeEmpresas
         Me.Controls.Add(Me.gboxDomicilio)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.dtpInicioDeOperaciones)
-        Me.Controls.Add(Me.dgrid_Empresa)
         Me.Controls.Add(Me.txtID)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtNombre)
@@ -393,11 +390,13 @@ Partial Class frm_CatalogoDeEmpresas
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtRFC)
         Me.Controls.Add(Me.lblRFC)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frm_CatalogoDeEmpresas"
         Me.Text = "Empresas"
-        CType(Me.dgrid_Empresa, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gboxDomicilio.ResumeLayout(False)
         Me.gboxDomicilio.PerformLayout()
+        CType(Me.dgrid_Empresa, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -411,7 +410,6 @@ Partial Class frm_CatalogoDeEmpresas
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents txtID As TextBox
-    Friend WithEvents dgrid_Empresa As DataGridView
     Friend WithEvents dtpInicioDeOperaciones As DateTimePicker
     Friend WithEvents Label3 As Label
     Friend WithEvents gboxDomicilio As GroupBox
@@ -434,8 +432,9 @@ Partial Class frm_CatalogoDeEmpresas
     Friend WithEvents CodigoP As System.Windows.Forms.Label
     Friend WithEvents txtTelefono As TextBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents idComercio As DataGridViewTextBoxColumn
-    Friend WithEvents RCF As DataGridViewTextBoxColumn
-    Friend WithEvents RazonSocial As DataGridViewTextBoxColumn
-    Friend WithEvents Nombre As DataGridViewTextBoxColumn
+    Friend WithEvents dgrid_Empresa As DataGridView
+    Friend WithEvents idEmpresa As DataGridViewTextBoxColumn
+    Friend WithEvents RFC As DataGridViewTextBoxColumn
+    Friend WithEvents razonSocial As DataGridViewTextBoxColumn
+    Friend WithEvents nombreComercial As DataGridViewTextBoxColumn
 End Class
