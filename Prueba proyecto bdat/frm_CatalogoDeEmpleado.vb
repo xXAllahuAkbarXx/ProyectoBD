@@ -11,8 +11,8 @@ Public Class frm_CatalogoDeEmpleado
     End Sub
 
     Private Sub LoadDataGrid()
-        Me.dgrid_Empleado.DataSource = ConnectionModule.connection.ReaderCommand("SELECT idEmpleado, nombreEmpleado, apellidoPaterno, apellidoMaterno, RFC, tarjetaVales FROM Empleado 
-                                                                        WHERE idEmpresa = " & idEmpresa & " AND activo = 1", "Empleado").Tables("Empleado")
+        Me.dgrid_Empleado.DataSource = ConnectionModule.connection.ReaderCommand("SELECT idEmpleado, nombreEmpleado, apellidoPaterno, apellidoMaterno, RFC, tarjetaVales FROM Empleado" &
+                                                                        "WHERE idEmpresa = " & idEmpresa & " AND activo = 1", "Empleado").Tables("Empleado")
         Me.dgrid_Empleado.Columns("nombreEmpleado").DisplayIndex = 0
         Me.dgrid_Empleado.Columns("apellidoPaterno").DisplayIndex = 1
         Me.dgrid_Empleado.Columns("apellidoMaterno").DisplayIndex = 2
