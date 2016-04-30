@@ -51,6 +51,7 @@ Partial Class frm_CatalogoDeComercios
         'txtRFC
         '
         Me.txtRFC.Location = New System.Drawing.Point(15, 166)
+        Me.txtRFC.MaxLength = 20
         Me.txtRFC.Name = "txtRFC"
         Me.txtRFC.Size = New System.Drawing.Size(201, 20)
         Me.txtRFC.TabIndex = 3
@@ -67,6 +68,7 @@ Partial Class frm_CatalogoDeComercios
         'txtRazonSocial
         '
         Me.txtRazonSocial.Location = New System.Drawing.Point(15, 88)
+        Me.txtRazonSocial.MaxLength = 100
         Me.txtRazonSocial.Name = "txtRazonSocial"
         Me.txtRazonSocial.Size = New System.Drawing.Size(577, 20)
         Me.txtRazonSocial.TabIndex = 1
@@ -83,6 +85,7 @@ Partial Class frm_CatalogoDeComercios
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(15, 127)
+        Me.txtNombre.MaxLength = 50
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(577, 20)
         Me.txtNombre.TabIndex = 2
