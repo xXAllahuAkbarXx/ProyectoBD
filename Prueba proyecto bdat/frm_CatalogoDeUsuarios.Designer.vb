@@ -85,13 +85,13 @@ Partial Class frm_CatalogoDeUsuarios
         Me.dgrid_Usuario.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Nombre, Me.Correo, Me.Telefono, Me.Borrar})
         Me.dgrid_Usuario.Location = New System.Drawing.Point(12, 223)
         Me.dgrid_Usuario.Name = "dgrid_Usuario"
-        Me.dgrid_Usuario.Size = New System.Drawing.Size(456, 252)
+        Me.dgrid_Usuario.Size = New System.Drawing.Size(585, 252)
         Me.dgrid_Usuario.TabIndex = 7
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(297, 145)
+        Me.Label5.Location = New System.Drawing.Point(403, 145)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(49, 13)
         Me.Label5.TabIndex = 9
@@ -99,10 +99,10 @@ Partial Class frm_CatalogoDeUsuarios
         '
         'txtTelefono
         '
-        Me.txtTelefono.Location = New System.Drawing.Point(300, 161)
+        Me.txtTelefono.Location = New System.Drawing.Point(406, 161)
         Me.txtTelefono.MaxLength = 20
         Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(168, 20)
+        Me.txtTelefono.Size = New System.Drawing.Size(191, 20)
         Me.txtTelefono.TabIndex = 4
         '
         'Label6
@@ -127,7 +127,7 @@ Partial Class frm_CatalogoDeUsuarios
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(297, 83)
+        Me.Label4.Location = New System.Drawing.Point(403, 83)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(61, 13)
         Me.Label4.TabIndex = 7
@@ -135,11 +135,11 @@ Partial Class frm_CatalogoDeUsuarios
         '
         'txtContraseña
         '
-        Me.txtContraseña.Location = New System.Drawing.Point(300, 99)
+        Me.txtContraseña.Location = New System.Drawing.Point(406, 99)
         Me.txtContraseña.MaxLength = 200
         Me.txtContraseña.Name = "txtContraseña"
         Me.txtContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtContraseña.Size = New System.Drawing.Size(168, 20)
+        Me.txtContraseña.Size = New System.Drawing.Size(191, 20)
         Me.txtContraseña.TabIndex = 2
         '
         'btnAceptar
@@ -148,7 +148,7 @@ Partial Class frm_CatalogoDeUsuarios
         Me.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue
         Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAceptar.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnAceptar.Location = New System.Drawing.Point(393, 189)
+        Me.btnAceptar.Location = New System.Drawing.Point(522, 189)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(75, 23)
         Me.btnAceptar.TabIndex = 5
@@ -161,7 +161,7 @@ Partial Class frm_CatalogoDeUsuarios
         Me.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelar.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnCancelar.Location = New System.Drawing.Point(300, 189)
+        Me.btnCancelar.Location = New System.Drawing.Point(429, 189)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
         Me.btnCancelar.TabIndex = 6
@@ -174,7 +174,7 @@ Partial Class frm_CatalogoDeUsuarios
         Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label3.Location = New System.Drawing.Point(0, -1)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(481, 64)
+        Me.Label3.Size = New System.Drawing.Size(628, 64)
         Me.Label3.TabIndex = 13
         '
         'Label7
@@ -219,7 +219,7 @@ Partial Class frm_CatalogoDeUsuarios
         Me.Telefono.HeaderText = "Telefono"
         Me.Telefono.MaxInputLength = 20
         Me.Telefono.Name = "Telefono"
-        Me.Telefono.Visible = False
+        Me.Telefono.Width = 133
         '
         'Borrar
         '
@@ -237,7 +237,7 @@ Partial Class frm_CatalogoDeUsuarios
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(480, 485)
+        Me.ClientSize = New System.Drawing.Size(613, 485)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnCancelar)

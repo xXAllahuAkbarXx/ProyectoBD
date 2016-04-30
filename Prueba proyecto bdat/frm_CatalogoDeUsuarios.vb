@@ -5,7 +5,8 @@
         Me.dgrid_Usuario.DataSource = ConnectionModule.connection.ReaderCommand("SELECT idUsuario, nombreCompleto, correoElectronico, telefonoContacto FROM Usuario WHERE activo = 1", "Usuario").Tables("Usuario")
         Me.dgrid_Usuario.Columns("Nombre").DisplayIndex = 0
         Me.dgrid_Usuario.Columns("Correo").DisplayIndex = 1
-        Me.dgrid_Usuario.Columns("Borrar").DisplayIndex = 2
+        Me.dgrid_Usuario.Columns("Telefono").DisplayIndex = 2
+        Me.dgrid_Usuario.Columns("Borrar").DisplayIndex = 3
     End Sub
 
     Private Sub ResetControls()
