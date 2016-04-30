@@ -11,10 +11,14 @@
 
     End Sub
     Private Sub LoadDataGrid()
-        'Me.dGridComercios.Rows.Clear()
-        'Me.dGridComercios.Columns.Clear()
         Me.dGridComercios.DataSource = ConnectionModule.connection.ReaderCommand("SELECT idComercio, razonSocial, nombreComercial, RFC FROM Comercio WHERE activo = 1", "Comercio").Tables("Comercio")
         Me.dGridComercios.Columns("idComercio").Visible = False
+        Me.dGridComercios.Columns("Borrar").DisplayIndex = 4
+        Me.dGridComercios.Columns("razonSocial").Width = 284
+        Me.dGridComercios.Columns("Borrar").Width = 50
+        'Me.dGridComercios.AutoResizeColumnHeadersHeight()
+        'Me.dGridComercios.Columns.Add("Borrar", "Borrar")
+        'Me.dGridComercios.Columns("Borrar").CellType = "DataGridViewButtonColumn";
         'Me.dGridComercios.Columns("IDComercio").DisplayIndex = 0
         'Me.dGridComercios.Columns("razonSocial").DisplayIndex = 0
         'Me.dGridComercios.Columns("nombreComercial").DisplayIndex = 1
@@ -83,13 +87,32 @@
     Private Sub dGridComercios_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dGridComercios.CellClick
         actualizando = True
         If e.RowIndex < dGridComercios.RowCount - 1 Then
-            txtID.Text = dGridComercios.CurrentRow.Cells.Item(0).Value
-            txtRazonSocial.Text = dGridComercios.CurrentRow.Cells.Item(1).Value
-            txtNombre.Text = dGridComercios.CurrentRow.Cells.Item(2).Value
-            txtRFC.Text = dGridComercios.CurrentRow.Cells.Item(3).Value
+            txtID.Text = dGridComercios.CurrentRow.Cells.Item(1).Value
+            txtRazonSocial.Text = dGridComercios.CurrentRow.Cells.Item(2).Value
+            txtNombre.Text = dGridComercios.CurrentRow.Cells.Item(3).Value
+            txtRFC.Text = dGridComercios.CurrentRow.Cells.Item(4).Value
 
             btnAceptar.Text = "Actualizar"
             btnAceptar.BackColor = Color.DodgerBlue
         End If
+        If e.ColumnIndex = 0 Then
+            If txtID.Text <> "" Then
+                Dim response As MsgBoxResult
+
+                response = MsgBox("¿Estás seguro que quieres eliminar el comercio '" & txtNombre.Text & "'?", MsgBoxStyle.YesNo, "Confirmación")
+
+                If response = MsgBoxResult.Yes Then
+                    ConnectionModule.connection.NonQueryCommand("UPDATE Comercio SET activo = 0 WHERE idComercio = " & txtID.Text)
+                    ConnectionModule.connection.Clear(dGridComercios)
+
+                    ResetControls()
+                    LoadDataGrid()
+                    btnAceptar.Text = "Agregar"
+                    actualizando = False
+                    btnAceptar.BackColor = Color.FromArgb(0, 192, 0)
+                End If
+            End If
+        End If
     End Sub
+
 End Class

@@ -35,6 +35,7 @@ Partial Class frm_CatalogoDeComercios
         Me.txtID = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Borrar = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.dGridComercios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -52,7 +53,7 @@ Partial Class frm_CatalogoDeComercios
         Me.txtRFC.Location = New System.Drawing.Point(15, 166)
         Me.txtRFC.Name = "txtRFC"
         Me.txtRFC.Size = New System.Drawing.Size(201, 20)
-        Me.txtRFC.TabIndex = 2
+        Me.txtRFC.TabIndex = 3
         '
         'Label1
         '
@@ -68,7 +69,7 @@ Partial Class frm_CatalogoDeComercios
         Me.txtRazonSocial.Location = New System.Drawing.Point(15, 88)
         Me.txtRazonSocial.Name = "txtRazonSocial"
         Me.txtRazonSocial.Size = New System.Drawing.Size(577, 20)
-        Me.txtRazonSocial.TabIndex = 4
+        Me.txtRazonSocial.TabIndex = 1
         '
         'lblNombre
         '
@@ -84,11 +85,14 @@ Partial Class frm_CatalogoDeComercios
         Me.txtNombre.Location = New System.Drawing.Point(15, 127)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(577, 20)
-        Me.txtNombre.TabIndex = 6
+        Me.txtNombre.TabIndex = 2
         '
         'dGridComercios
         '
+        Me.dGridComercios.AllowUserToResizeColumns = False
+        Me.dGridComercios.AllowUserToResizeRows = False
         Me.dGridComercios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dGridComercios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Borrar})
         Me.dGridComercios.Location = New System.Drawing.Point(15, 196)
         Me.dGridComercios.Name = "dGridComercios"
         Me.dGridComercios.ReadOnly = True
@@ -104,7 +108,7 @@ Partial Class frm_CatalogoDeComercios
         Me.btnAceptar.Location = New System.Drawing.Point(517, 167)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(75, 23)
-        Me.btnAceptar.TabIndex = 8
+        Me.btnAceptar.TabIndex = 4
         Me.btnAceptar.Text = "Agregar"
         Me.btnAceptar.UseVisualStyleBackColor = False
         '
@@ -117,7 +121,7 @@ Partial Class frm_CatalogoDeComercios
         Me.btnCancelar.Location = New System.Drawing.Point(436, 167)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCancelar.TabIndex = 9
+        Me.btnCancelar.TabIndex = 5
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = False
         '
@@ -162,6 +166,15 @@ Partial Class frm_CatalogoDeComercios
         Me.Label3.Size = New System.Drawing.Size(669, 64)
         Me.Label3.TabIndex = 17
         '
+        'Borrar
+        '
+        Me.Borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Borrar.HeaderText = "Borrar"
+        Me.Borrar.Name = "Borrar"
+        Me.Borrar.ReadOnly = True
+        Me.Borrar.Text = "Borrar"
+        Me.Borrar.UseColumnTextForButtonValue = True
+        '
         'frm_CatalogoDeComercios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -180,6 +193,8 @@ Partial Class frm_CatalogoDeComercios
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtRFC)
         Me.Controls.Add(Me.lblRFC)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frm_CatalogoDeComercios"
         Me.Text = "Comercios autorizados"
         CType(Me.dGridComercios, System.ComponentModel.ISupportInitialize).EndInit()
@@ -201,4 +216,5 @@ Partial Class frm_CatalogoDeComercios
     Friend WithEvents txtID As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Borrar As DataGridViewButtonColumn
 End Class
