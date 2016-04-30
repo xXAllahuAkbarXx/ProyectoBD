@@ -1,4 +1,5 @@
-﻿Public Class frm_CatalogoDeEmpleado
+﻿
+Public Class frm_CatalogoDeEmpleado
     Dim actualizando = False
     Dim puedoAgregar = False
 
@@ -39,17 +40,17 @@
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
 
         If txtNombre.Text <> "" And txtApellidoP.Text <> "" And (txtApellidoM.Text <> "") And txtRFC.Text <> "" Then
-            ' If (txtTelefono.Text.Length >= 8) Then
-            If actualizando <> True Then
-                puedoAgregar = True
-                ' Else
-                '   MessageBox.Show("El telefono debe ser de minimo 8 digitos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                ' End If
+            If (Validation.OnlyLetters(txtNombre.Text) And Validation.OnlyLetters(txtApellidoP.Text) And Validation.OnlyLetters(txtApellidoM.Text)) Then
+                If actualizando <> True Then
+                    puedoAgregar = True
+                Else
+                    puedoAgregar = True
+                End If
             Else
-                puedoAgregar = True
+                MessageBox.Show("No se permiten números en el nombre.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Else
-            MessageBox.Show("Todos los campos son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Todos los campos son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
 
         If puedoAgregar = True Then
