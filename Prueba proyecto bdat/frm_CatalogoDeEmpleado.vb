@@ -55,9 +55,13 @@ Public Class frm_CatalogoDeEmpleado
 
         If puedoAgregar = True Then
             If txtNumeroEmpleado.Text = "" Then
-                ' Falta obtener el id de la empresa
-                Dim numeroTarjeta = 0
-                ConnectionModule.connection.NonQueryCommand("INSERT INTO Empleado (idEmpresa, nombreEmpleado, apellidoPaterno, apellidoMaterno, RFC, tarjetaVales) VALUES (1,'" & txtNombre.Text & "','" & txtApellidoP.Text & "','" & txtApellidoM.Text & "','" & txtRFC.Text & "', '" & numeroTarjeta & "')")
+                ' TODO(Luis): Falta obtener el id de la empresa
+
+                Dim ultimaTarjeta As DataSet
+                ultimaTarjeta = ConnectionModule.connection.ReaderCommand("SELECT MAX(tarjetaVales) As ultimaTarjeta FROM Empleado", "Empleado")
+                Dim numeroTarjeta As Double = Double.Parse(ultimaTarjeta.Tables("Empleado").Rows(0).Item("ultimaTarjeta").ToString()) + 1
+                ConnectionModule.connection.NonQueryCommand("INSERT INTO Empleado (idEmpresa, nombreEmpleado, apellidoPaterno, apellidoMaterno, RFC, tarjetaVales) 
+                                                            VALUES (1,'" & txtNombre.Text & "','" & txtApellidoP.Text & "','" & txtApellidoM.Text & "','" & txtRFC.Text & "', " & numeroTarjeta & ")")
             Else
                 ConnectionModule.connection.NonQueryCommand("UPDATE Empleado SET nombreEmpleado = '" + txtNombre.Text + "', apellidoPaterno = '" +
                                                             txtApellidoP.Text + "', apellidoMaterno = '" + txtApellidoM.Text + "', RFC = '" + txtRFC.Text +
