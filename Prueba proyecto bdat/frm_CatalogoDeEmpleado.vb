@@ -85,8 +85,8 @@ Public Class frm_CatalogoDeEmpleado
                 Dim ultimaTarjeta As DataSet = ConnectionModule.connection.ReaderCommand("SELECT MAX(tarjetaVales) As ultimaTarjeta FROM Empleado", "Empleado")
                 Dim numeroTarjeta As Int64 = Int64.Parse(ultimaTarjeta.Tables("Empleado").Rows(0).Item("ultimaTarjeta").ToString()) + 1
 
-                ConnectionModule.connection.NonQueryCommand("INSERT INTO Empleado (idEmpresa, nombreEmpleado, apellidoPaterno, apellidoMaterno, RFC, tarjetaVales) 
-                                                            VALUES (" & idEmpresa & ",'" & txtNombre.Text & "','" & txtApellidoP.Text & "','" & txtApellidoM.Text & "','" & txtRFC.Text & "', " & numeroTarjeta & ")")
+                ConnectionModule.connection.NonQueryCommand("INSERT INTO Empleado (idEmpresa, nombreEmpleado, apellidoPaterno, apellidoMaterno, RFC, tarjetaVales)" &
+                                                            "VALUES (" & idEmpresa & ",'" & txtNombre.Text & "','" & txtApellidoP.Text & "','" & txtApellidoM.Text & "','" & txtRFC.Text & "', " & numeroTarjeta & ")")
             Else
                 ConnectionModule.connection.NonQueryCommand("UPDATE Empleado SET nombreEmpleado = '" + txtNombre.Text + "', apellidoPaterno = '" +
                                                             txtApellidoP.Text + "', apellidoMaterno = '" + txtApellidoM.Text + "', RFC = '" + txtRFC.Text +
