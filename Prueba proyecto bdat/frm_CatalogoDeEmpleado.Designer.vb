@@ -45,7 +45,7 @@ Partial Class frm_CatalogoDeEmpleado
         Me.borrar = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbEmpresa = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.lblNumeroEmpleado = New System.Windows.Forms.Label()
         Me.lblNumeroTarjeta = New System.Windows.Forms.Label()
@@ -260,13 +260,13 @@ Partial Class frm_CatalogoDeEmpleado
         Me.Label8.Size = New System.Drawing.Size(694, 64)
         Me.Label8.TabIndex = 16
         '
-        'ComboBox1
+        'cmbEmpresa
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(527, 21)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 18
+        Me.cmbEmpresa.FormattingEnabled = True
+        Me.cmbEmpresa.Location = New System.Drawing.Point(527, 21)
+        Me.cmbEmpresa.Name = "cmbEmpresa"
+        Me.cmbEmpresa.Size = New System.Drawing.Size(121, 21)
+        Me.cmbEmpresa.TabIndex = 18
         '
         'Label9
         '
@@ -302,7 +302,7 @@ Partial Class frm_CatalogoDeEmpleado
         Me.Controls.Add(Me.lblNumeroTarjeta)
         Me.Controls.Add(Me.lblNumeroEmpleado)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cmbEmpresa)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.dgrid_Empleado)
@@ -341,7 +341,7 @@ Partial Class frm_CatalogoDeEmpleado
     Friend WithEvents dgrid_Empleado As DataGridView
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbEmpresa As ComboBox
     Friend WithEvents Label9 As Label
     Friend WithEvents idEmpleado As DataGridViewTextBoxColumn
     Friend WithEvents nombreEmpleado As DataGridViewTextBoxColumn

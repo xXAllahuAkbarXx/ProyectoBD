@@ -2,6 +2,7 @@
 Public Class frm_CatalogoDeEmpleado
     Dim actualizando = False
     Dim puedoAgregar = False
+    Dim idEmpresa As Integer
 
     Private Sub frm_CatalogoDeEmpleado_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Me.Hide()
@@ -10,7 +11,8 @@ Public Class frm_CatalogoDeEmpleado
     End Sub
 
     Private Sub LoadDataGrid()
-        Me.dgrid_Empleado.DataSource = ConnectionModule.connection.ReaderCommand("SELECT idEmpleado, nombreEmpleado, apellidoPaterno, apellidoMaterno, RFC, tarjetaVales FROM Empleado WHERE activo = 1", "Empleado").Tables("Empleado")
+        Me.dgrid_Empleado.DataSource = ConnectionModule.connection.ReaderCommand("SELECT idEmpleado, nombreEmpleado, apellidoPaterno, apellidoMaterno, RFC, tarjetaVales FROM Empleado 
+                                                                        WHERE idEmpresa = " & idEmpresa & " AND activo = 1", "Empleado").Tables("Empleado")
         Me.dgrid_Empleado.Columns("nombreEmpleado").DisplayIndex = 0
         Me.dgrid_Empleado.Columns("apellidoPaterno").DisplayIndex = 1
         Me.dgrid_Empleado.Columns("apellidoMaterno").DisplayIndex = 2
@@ -29,12 +31,33 @@ Public Class frm_CatalogoDeEmpleado
         txtNombre.Focus()
     End Sub
 
-    Private Sub txtRFC_TextChanged(sender As Object, e As EventArgs) Handles txtRFC.TextChanged
+    Private Sub EnabledControls(ByVal enableControls As Boolean)
+        lblNumeroEmpleado.Enabled = enableControls
+        txtRFC.Enabled = enableControls
+        txtNombre.Enabled = enableControls
+        txtApellidoP.Enabled = enableControls
+        txtApellidoM.Enabled = enableControls
+        lblNumeroTarjeta.Enabled = enableControls
+        dgrid_Empleado.Enabled = enableControls
+
+    End Sub
+
+    Private Sub LoadComboBox()
+
+        Dim Empresas As DataTable = ConnectionModule.connection.ReaderCommand("SELECT * FROM Empresa", "Empresa").Tables("Empresa")
+
+        For index As Integer = 0 To empresas.Rows.Count() - 1
+            cmbEmpresa.Items.Add(empresas.Rows(index).Item("nombreComercial"))
+        Next
 
     End Sub
 
     Private Sub frm_CatalogoDeEmpleado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadDataGrid()
+        LoadComboBox()
+
+        If (cmbEmpresa.Text = "") Then
+            EnabledControls(False)
+        End If
     End Sub
 
 
@@ -61,9 +84,8 @@ Public Class frm_CatalogoDeEmpleado
                 Dim ultimaTarjeta As DataSet = ConnectionModule.connection.ReaderCommand("SELECT MAX(tarjetaVales) As ultimaTarjeta FROM Empleado", "Empleado")
                 Dim numeroTarjeta As Int64 = Int64.Parse(ultimaTarjeta.Tables("Empleado").Rows(0).Item("ultimaTarjeta").ToString()) + 1
 
-
                 ConnectionModule.connection.NonQueryCommand("INSERT INTO Empleado (idEmpresa, nombreEmpleado, apellidoPaterno, apellidoMaterno, RFC, tarjetaVales) 
-                                                            VALUES (1,'" & txtNombre.Text & "','" & txtApellidoP.Text & "','" & txtApellidoM.Text & "','" & txtRFC.Text & "', " & numeroTarjeta & ")")
+                                                            VALUES (" & idEmpresa & ",'" & txtNombre.Text & "','" & txtApellidoP.Text & "','" & txtApellidoM.Text & "','" & txtRFC.Text & "', " & numeroTarjeta & ")")
             Else
                 ConnectionModule.connection.NonQueryCommand("UPDATE Empleado SET nombreEmpleado = '" + txtNombre.Text + "', apellidoPaterno = '" +
                                                             txtApellidoP.Text + "', apellidoMaterno = '" + txtApellidoM.Text + "', RFC = '" + txtRFC.Text +
@@ -125,5 +147,18 @@ Public Class frm_CatalogoDeEmpleado
         btnAceptar.Text = "Agregar"
         actualizando = False
         btnAceptar.BackColor = Color.FromArgb(0, 192, 0)
+    End Sub
+
+    Private Sub cmbEmpresa_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbEmpresa.SelectedIndexChanged
+
+        If (cmbEmpresa.Text <> "") Then
+            EnabledControls(True)
+            Dim Empresas As DataTable = ConnectionModule.connection.ReaderCommand("SELECT * FROM Empresa", "Empresa").Tables("Empresa")
+            idEmpresa = Integer.Parse(Empresas.Rows(cmbEmpresa.SelectedIndex).Item("idEmpresa").ToString())
+            LoadDataGrid()
+        Else
+            EnabledControls(False)
+        End If
+
     End Sub
 End Class
