@@ -99,3 +99,25 @@ C:\Users\Yamil Yáñez\Desktop\ProyectoBD\ProyectoBD\Prueba proyecto bdat\obj\De
 C:\Users\Yamil Yáñez\Desktop\ProyectoBD\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_UsoTarjetaEmpresas.resources
 C:\Users\Yamil Yáñez\Desktop\ProyectoBD\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.Resources.resources
 C:\Users\Yamil Yáñez\Desktop\ProyectoBD\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbproj.GenerateResource.Cache
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe.config
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.exe
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.xml
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.pdb
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.pdb
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.xml
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbprojResolveAssemblyReference.cache
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeComercios.resources
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeEmpleado.resources
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeEmpresas.resources
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeUsuarios.resources
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frmInicio.resources
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.FormCatUsu.resources
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_Depositar.resources
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_InicioDeSesion.resources
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_Menu.resources
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_Movimientos.resources
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_UsoDeTarjeta.resources
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_UsoTarjetaEmpresas.resources
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.Resources.resources
+C:\Users\w7\Source\Repos\ProyectoBD\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbproj.GenerateResource.Cache
