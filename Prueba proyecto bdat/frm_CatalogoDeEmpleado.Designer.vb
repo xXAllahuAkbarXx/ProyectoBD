@@ -38,6 +38,10 @@ Partial Class frm_CatalogoDeEmpleado
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.dgrid_Empleado = New System.Windows.Forms.DataGridView()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.idEmpleado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nombreEmpleado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.apellidoPaterno = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -45,10 +49,6 @@ Partial Class frm_CatalogoDeEmpleado
         Me.RFC = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tarjetaVales = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.borrar = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgrid_Empleado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -56,7 +56,7 @@ Partial Class frm_CatalogoDeEmpleado
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(8, 76)
+        Me.Label1.Location = New System.Drawing.Point(32, 78)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(44, 13)
         Me.Label1.TabIndex = 0
@@ -64,7 +64,7 @@ Partial Class frm_CatalogoDeEmpleado
         '
         'txtNumeroEmpleado
         '
-        Me.txtNumeroEmpleado.Location = New System.Drawing.Point(11, 92)
+        Me.txtNumeroEmpleado.Location = New System.Drawing.Point(35, 94)
         Me.txtNumeroEmpleado.Name = "txtNumeroEmpleado"
         Me.txtNumeroEmpleado.ReadOnly = True
         Me.txtNumeroEmpleado.Size = New System.Drawing.Size(87, 20)
@@ -79,7 +79,7 @@ Partial Class frm_CatalogoDeEmpleado
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(11, 128)
+        Me.GroupBox1.Location = New System.Drawing.Point(35, 120)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(389, 87)
         Me.GroupBox1.TabIndex = 2
@@ -140,7 +140,7 @@ Partial Class frm_CatalogoDeEmpleado
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(163, 76)
+        Me.Label5.Location = New System.Drawing.Point(187, 78)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(28, 13)
         Me.Label5.TabIndex = 9
@@ -148,16 +148,16 @@ Partial Class frm_CatalogoDeEmpleado
         '
         'txtRFC
         '
-        Me.txtRFC.Location = New System.Drawing.Point(166, 92)
+        Me.txtRFC.Location = New System.Drawing.Point(190, 94)
         Me.txtRFC.MaxLength = 50
         Me.txtRFC.Name = "txtRFC"
-        Me.txtRFC.Size = New System.Drawing.Size(222, 20)
+        Me.txtRFC.Size = New System.Drawing.Size(234, 20)
         Me.txtRFC.TabIndex = 1
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(8, 228)
+        Me.Label6.Location = New System.Drawing.Point(467, 78)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(91, 13)
         Me.Label6.TabIndex = 11
@@ -165,11 +165,11 @@ Partial Class frm_CatalogoDeEmpleado
         '
         'txtNumeroTarjeta
         '
-        Me.txtNumeroTarjeta.Location = New System.Drawing.Point(11, 244)
+        Me.txtNumeroTarjeta.Location = New System.Drawing.Point(470, 94)
         Me.txtNumeroTarjeta.MaxLength = 16
         Me.txtNumeroTarjeta.Name = "txtNumeroTarjeta"
         Me.txtNumeroTarjeta.ReadOnly = True
-        Me.txtNumeroTarjeta.Size = New System.Drawing.Size(108, 20)
+        Me.txtNumeroTarjeta.Size = New System.Drawing.Size(178, 20)
         Me.txtNumeroTarjeta.TabIndex = 12
         Me.txtNumeroTarjeta.TabStop = False
         '
@@ -179,7 +179,7 @@ Partial Class frm_CatalogoDeEmpleado
         Me.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue
         Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAceptar.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnAceptar.Location = New System.Drawing.Point(325, 241)
+        Me.btnAceptar.Location = New System.Drawing.Point(573, 184)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(75, 23)
         Me.btnAceptar.TabIndex = 4
@@ -191,7 +191,7 @@ Partial Class frm_CatalogoDeEmpleado
         Me.btnCancelar.BackColor = System.Drawing.SystemColors.GrayText
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelar.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnCancelar.Location = New System.Drawing.Point(235, 241)
+        Me.btnCancelar.Location = New System.Drawing.Point(483, 184)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
         Me.btnCancelar.TabIndex = 5
@@ -202,10 +202,52 @@ Partial Class frm_CatalogoDeEmpleado
         '
         Me.dgrid_Empleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgrid_Empleado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idEmpleado, Me.nombreEmpleado, Me.apellidoPaterno, Me.apellidoMaterno, Me.RFC, Me.tarjetaVales, Me.borrar})
-        Me.dgrid_Empleado.Location = New System.Drawing.Point(11, 283)
+        Me.dgrid_Empleado.Location = New System.Drawing.Point(12, 233)
         Me.dgrid_Empleado.Name = "dgrid_Empleado"
-        Me.dgrid_Empleado.Size = New System.Drawing.Size(736, 261)
+        Me.dgrid_Empleado.Size = New System.Drawing.Size(664, 261)
         Me.dgrid_Empleado.TabIndex = 6
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Maroon
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label7.Location = New System.Drawing.Point(6, 17)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(142, 25)
+        Me.Label7.TabIndex = 17
+        Me.Label7.Text = "Crono-Vales"
+        '
+        'Label8
+        '
+        Me.Label8.BackColor = System.Drawing.Color.Maroon
+        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label8.Location = New System.Drawing.Point(-6, -3)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(694, 64)
+        Me.Label8.TabIndex = 16
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(527, 21)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 18
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Maroon
+        Me.Label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label9.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label9.Location = New System.Drawing.Point(524, 5)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(48, 13)
+        Me.Label9.TabIndex = 19
+        Me.Label9.Text = "Empresa"
         '
         'idEmpleado
         '
@@ -242,7 +284,9 @@ Partial Class frm_CatalogoDeEmpleado
         '
         Me.tarjetaVales.DataPropertyName = "tarjetaVales"
         Me.tarjetaVales.HeaderText = "Tarjeta"
+        Me.tarjetaVales.MaxInputLength = 37000
         Me.tarjetaVales.Name = "tarjetaVales"
+        Me.tarjetaVales.Width = 120
         '
         'borrar
         '
@@ -254,53 +298,11 @@ Partial Class frm_CatalogoDeEmpleado
         Me.borrar.ToolTipText = "Borrar"
         Me.borrar.UseColumnTextForButtonValue = True
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Maroon
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label7.Location = New System.Drawing.Point(6, 17)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(142, 25)
-        Me.Label7.TabIndex = 17
-        Me.Label7.Text = "Crono-Vales"
-        '
-        'Label8
-        '
-        Me.Label8.BackColor = System.Drawing.Color.Maroon
-        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label8.Location = New System.Drawing.Point(-6, -3)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(425, 64)
-        Me.Label8.TabIndex = 16
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(279, 23)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 18
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Maroon
-        Me.Label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label9.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label9.Location = New System.Drawing.Point(276, 7)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(48, 13)
-        Me.Label9.TabIndex = 19
-        Me.Label9.Text = "Empresa"
-        '
         'frm_CatalogoDeEmpleado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(759, 556)
+        Me.ClientSize = New System.Drawing.Size(684, 501)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label7)
@@ -315,6 +317,7 @@ Partial Class frm_CatalogoDeEmpleado
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.txtNumeroEmpleado)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "frm_CatalogoDeEmpleado"
         Me.Text = "Empleados"
         Me.GroupBox1.ResumeLayout(False)
