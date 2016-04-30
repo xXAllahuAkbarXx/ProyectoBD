@@ -314,6 +314,7 @@ Partial Class frm_CatalogoDeEmpleado
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frm_CatalogoDeEmpleado"
         Me.Text = "Empleados"
         Me.GroupBox1.ResumeLayout(False)
