@@ -80,7 +80,7 @@
         End If
     End Sub
 
-    Private Sub dGridComercios_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dGridComercios.CellContentClick
+    Private Sub dGridComercios_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dGridComercios.CellClick
         actualizando = True
         If e.RowIndex < dGridComercios.RowCount - 1 Then
             txtID.Text = dGridComercios.CurrentRow.Cells.Item(0).Value
