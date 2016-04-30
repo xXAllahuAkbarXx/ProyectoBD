@@ -39,7 +39,8 @@ Public Class frm_CatalogoDeEmpleado
         txtApellidoM.Enabled = enableControls
         lblNumeroTarjeta.Enabled = enableControls
         dgrid_Empleado.Enabled = enableControls
-
+        btnAceptar.Enabled = enableControls
+        btnCancelar.Enabled = enableControls
     End Sub
 
     Private Sub LoadComboBox()
@@ -79,7 +80,7 @@ Public Class frm_CatalogoDeEmpleado
 
         If puedoAgregar = True Then
             If lblNumeroEmpleado.Text = "" Then
-                ' TODO(Luis): Falta obtener el id de la empresa
+
 
                 Dim ultimaTarjeta As DataSet = ConnectionModule.connection.ReaderCommand("SELECT MAX(tarjetaVales) As ultimaTarjeta FROM Empleado", "Empleado")
                 Dim numeroTarjeta As Int64 = Int64.Parse(ultimaTarjeta.Tables("Empleado").Rows(0).Item("ultimaTarjeta").ToString()) + 1
