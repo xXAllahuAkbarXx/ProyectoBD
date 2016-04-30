@@ -289,6 +289,8 @@ Partial Class frm_CatalogoDeEmpleado
         Me.borrar.Name = "borrar"
         Me.borrar.ReadOnly = True
         Me.borrar.Text = "Borrar"
+        Me.borrar.ToolTipText = "Borrar"
+        Me.borrar.UseColumnTextForButtonValue = True
         '
         'frm_CatalogoDeEmpleado
         '
