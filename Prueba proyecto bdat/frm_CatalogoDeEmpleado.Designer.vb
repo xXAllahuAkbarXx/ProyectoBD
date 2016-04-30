@@ -38,10 +38,6 @@ Partial Class frm_CatalogoDeEmpleado
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.dgrid_Empleado = New System.Windows.Forms.DataGridView()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.idEmpleado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nombreEmpleado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.apellidoPaterno = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -49,6 +45,10 @@ Partial Class frm_CatalogoDeEmpleado
         Me.RFC = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tarjetaVales = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.borrar = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgrid_Empleado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -203,48 +203,6 @@ Partial Class frm_CatalogoDeEmpleado
         Me.dgrid_Empleado.Size = New System.Drawing.Size(736, 261)
         Me.dgrid_Empleado.TabIndex = 6
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Maroon
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label7.Location = New System.Drawing.Point(6, 17)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(142, 25)
-        Me.Label7.TabIndex = 17
-        Me.Label7.Text = "Crono-Vales"
-        '
-        'Label8
-        '
-        Me.Label8.BackColor = System.Drawing.Color.Maroon
-        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label8.Location = New System.Drawing.Point(-6, -3)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(425, 64)
-        Me.Label8.TabIndex = 16
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(279, 23)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 18
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Maroon
-        Me.Label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label9.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label9.Location = New System.Drawing.Point(276, 7)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(48, 13)
-        Me.Label9.TabIndex = 19
-        Me.Label9.Text = "Empresa"
-        '
         'idEmpleado
         '
         Me.idEmpleado.DataPropertyName = "idEmpleado"
@@ -291,6 +249,48 @@ Partial Class frm_CatalogoDeEmpleado
         Me.borrar.Text = "Borrar"
         Me.borrar.ToolTipText = "Borrar"
         Me.borrar.UseColumnTextForButtonValue = True
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Maroon
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label7.Location = New System.Drawing.Point(6, 17)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(142, 25)
+        Me.Label7.TabIndex = 17
+        Me.Label7.Text = "Crono-Vales"
+        '
+        'Label8
+        '
+        Me.Label8.BackColor = System.Drawing.Color.Maroon
+        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label8.Location = New System.Drawing.Point(-6, -3)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(425, 64)
+        Me.Label8.TabIndex = 16
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(279, 23)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 18
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Maroon
+        Me.Label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label9.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label9.Location = New System.Drawing.Point(276, 7)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(48, 13)
+        Me.Label9.TabIndex = 19
+        Me.Label9.Text = "Empresa"
         '
         'frm_CatalogoDeEmpleado
         '
